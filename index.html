@@ -10,20 +10,7 @@
 
 <body>
 
-    <!-- 頁首導航 -->
-    <header>
-        <a href="#" class="logo">
-            <span>Jiu-eat</span>
-        </a>
-        <button class="hamburger" id="hamburger-btn" aria-label="選單">☰</button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#">探索聚會</a></li>
-            <li><a href="#">主題動態</a></li>
-            <li><a href="#">開團教學</a></li>
-            <li><button class="btn-primary">會員登入</button></li>
-            <li><button class="btn-primary">發起聚會</button></li>
-        </ul>
-    </header>
+    <!-- header 由 include.js 載入 -->
 
     <!-- 主視覺區塊 -->
     <section class="hero">
@@ -80,11 +67,6 @@
         </div>
 
     </main>
-
-    <!-- 頁尾 -->
-    <footer>
-        <p>© Jiu-eat - 揪食聚會活動平台</p>
-    </footer>
 
     <!-- JavaScript 生成卡片-->
     <script>
@@ -170,13 +152,11 @@
             const finalCount = Math.ceil(targetCardCount / 4) * 4;
             renderEvents("upcoming-events-grid", finalCount);
 
-            const hamburger = document.getElementById("hamburger-btn");
-            const navLinks = document.getElementById("nav-links");
-            hamburger.addEventListener("click", () => {
-                navLinks.classList.toggle("open");
-            });
+            // 漢堡選單邏輯已移至 include.js
         });
     </script>
+
+    <script src="include.js"></script>
 </body>
 
 </html>
