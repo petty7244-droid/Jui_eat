@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eatgether - 聚會交友活動約會平台</title>
+    <title>Jiu-eat - 揪食聚會活動平台</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,7 @@
     <!-- 頁首導航 -->
     <header>
         <a href="#" class="logo">
-            <span>Eatgether</span>
+            <span>Jiu-eat</span>
         </a>
         <ul class="nav-links">
             <li><a href="#">探索聚會</a></li>
@@ -26,7 +26,7 @@
     <!-- 主視覺區塊 -->
     <section class="hero">
         <h1>尋找有趣的靈魂，從一頓飯開始</h1>
-        <p>全台最大的社交聚會平台，隨時隨地開啟話題與邂逅</p>
+        <p>最夯的社交聚會平台，隨時隨地開啟聚會與邂逅</p>
 
         <div class="search-bar">
             <input type="text" placeholder="搜尋美食、桌遊、戶外運動、唱歌...">
@@ -35,7 +35,7 @@
 
         <!-- 主題標籤 -->
         <div class="categories">
-            <div class="category-chip active">🔥 全部聚會</div>
+            <div class="category-chip active">🔥 最夯聚會</div>
             <div class="category-chip">🍱 美食饗宴</div>
             <div class="category-chip">🎲 桌遊派對</div>
             <div class="category-chip">🎤 歡唱 KTV</div>
@@ -44,113 +44,217 @@
         </div>
     </section>
 
-    <!-- 主要卡片列表 -->
+    <!-- 主要內容 container -->
     <main class="container">
-        <div class="section-title">
-            <h2>近期熱門聚會</h2>
-            <a href="#">查看更多 ></a>
+
+        <!-- 區塊 1：近期熱門聚會 -->
+        <div class="events-section">
+            <div class="section-title">
+                <h2>最夯聚會</h2>
+                <a href="#">查看更多 ></a>
+            </div>
+
+            <div class="events-grid">
+                <!-- 卡片 1 -->
+                <div class="event-card">
+                    <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=1');">
+                        <span class="card-tag">🍱 美食饗宴</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="event-title">週末預約困難店！日式和牛燒肉團</div>
+                        <div class="event-info">
+                            <span>📍 台北市大安區</span>
+                            <span>⏰ 10/24 (六) 18:30</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="host-info">
+                                <div class="avatar"
+                                    style="background-image: url('https://picsum.photos/50?random=3'); background-size: cover;">
+                                </div>
+                                <span>Eric</span>
+                            </div>
+                            <span class="status-badge">還缺 2 人</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片 2 -->
+                <div class="event-card">
+                    <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=2');">
+                        <span class="card-tag">🎲 桌遊派對</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="event-title">新手友善！阿瓦隆 & 狼人殺歡樂夜</div>
+                        <div class="event-info">
+                            <span>📍 新北市板橋區</span>
+                            <span>⏰ 10/25 (日) 14:00</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="host-info">
+                                <div class="avatar"
+                                    style="background-image: url('https://picsum.photos/50?random=11'); background-size: cover;">
+                                </div>
+                                <span>Jessica</span>
+                            </div>
+                            <span class="status-badge">還缺 4 人</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片 3 -->
+                <div class="event-card">
+                    <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=9');">
+                        <span class="card-tag">☕ 咖啡閒聊</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="event-title">創業與自由職業者下午茶交流會</div>
+                        <div class="event-info">
+                            <span>📍 台北市信義區</span>
+                            <span>⏰ 10/28 (三) 15:00</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="host-info">
+                                <div class="avatar"
+                                    style="background-image: url('https://picsum.photos/50?random=6'); background-size: cover;">
+                                </div>
+                                <span>Alex</span>
+                            </div>
+                            <span class="status-badge">報名即將截止</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片 4 -->
+                <div class="event-card">
+                    <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=4');">
+                        <span class="card-tag">🎤 歡唱 KTV</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="event-title">錢櫃夜唱團 流行金曲狂歡夜</div>
+                        <div class="event-info">
+                            <span>📍 台北市中山區</span>
+                            <span>⏰ 10/30 (五) 23:00</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="host-info">
+                                <div class="avatar"
+                                    style="background-image: url('https://picsum.photos/50?random=13'); background-size: cover;">
+                                </div>
+                                <span>Amber</span>
+                            </div>
+                            <span class="status-badge">還缺 1 人</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="events-grid">
-            <!-- 卡片 1 -->
-            <div class="event-card">
-                <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=1');">
-                    <span class="card-tag">🍱 美食饗宴</span>
-                </div>
-                <div class="card-content">
-                    <div class="event-title">週末預約困難店！日式和牛燒肉團</div>
-                    <div class="event-info">
-                        <span>📍 台北市大安區</span>
-                        <span>⏰ 10/24 (六) 18:30</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="host-info">
-                            <div class="avatar"
-                                style="background-image: url('https://picsum.photos/50?random=10'); background-size: cover;">
-                            </div>
-                            <span>Eric</span>
-                        </div>
-                        <span class="status-badge">還缺 2 人</span>
-                    </div>
-                </div>
+        <!-- 區塊 2：即將成團聚會（改為 JS 動態渲染） -->
+        <div class="events-section">
+            <div class="section-title">
+                <h2>推薦聚會</h2>
+                <a href="#">查看更多 ></a>
             </div>
 
-            <!-- 卡片 2 -->
-            <div class="event-card">
-                <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=2');">
-                    <span class="card-tag">🎲 桌遊派對</span>
-                </div>
-                <div class="card-content">
-                    <div class="event-title">新手友善！阿瓦隆 & 狼人殺歡樂夜</div>
-                    <div class="event-info">
-                        <span>📍 新北市板橋區</span>
-                        <span>⏰ 10/25 (日) 14:00</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="host-info">
-                            <div class="avatar"
-                                style="background-image: url('https://picsum.photos/50?random=11'); background-size: cover;">
-                            </div>
-                            <span>Jessica</span>
-                        </div>
-                        <span class="status-badge">還缺 4 人</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 卡片 3 -->
-            <div class="event-card">
-                <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=3');">
-                    <span class="card-tag">☕ 咖啡閒聊</span>
-                </div>
-                <div class="card-content">
-                    <div class="event-title">創業與自由職業者下午茶交流會</div>
-                    <div class="event-info">
-                        <span>📍 台北市信義區</span>
-                        <span>⏰ 10/28 (三) 15:00</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="host-info">
-                            <div class="avatar"
-                                style="background-image: url('https://picsum.photos/50?random=12'); background-size: cover;">
-                            </div>
-                            <span>Alex</span>
-                        </div>
-                        <span class="status-badge">報名即將截止</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 卡片 4 -->
-            <div class="event-card">
-                <div class="card-img" style="background-image: url('https://picsum.photos/400/300?random=4');">
-                    <span class="card-tag">🎤 歡唱 KTV</span>
-                </div>
-                <div class="card-content">
-                    <div class="event-title">錢櫃夜唱團 流行金曲狂歡夜</div>
-                    <div class="event-info">
-                        <span>📍 台北市中山區</span>
-                        <span>⏰ 10/30 (五) 23:00</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="host-info">
-                            <div class="avatar"
-                                style="background-image: url('https://picsum.photos/50?random=13'); background-size: cover;">
-                            </div>
-                            <span>Amber</span>
-                        </div>
-                        <span class="status-badge">還缺 1 人</span>
-                    </div>
-                </div>
-            </div>
+            <!-- 動態生成卡片的容器 -->
+            <div class="events-grid" id="upcoming-events-grid"></div>
         </div>
+
     </main>
 
     <!-- 頁尾 -->
     <footer>
-        <p>© Eatgether - 聚會交友活動約會平台</p>
+        <p>© Jiu-eat - 揪食聚會活動平台</p>
     </footer>
 
+    <!-- 動態生成區塊 2 卡片的 JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // 1. 在這裡設定你「希望」顯示的預設卡片數量（例如：5、7、10 都可以）
+            const targetCardCount = 6;
+
+            // 2. 自動計算並調整為 4 的倍數（如輸入 6 會自動轉為 8）
+            const finalCount = Math.ceil(targetCardCount / 4) * 4;
+
+            // 預設卡片資料庫範本
+            const sampleCards = [
+                {
+                    tag: "🍱 美食饗宴",
+                    title: "週末預約困難店！日式和牛燒肉團",
+                    location: "📍 台北市大安區",
+                    time: "⏰ 10/24 (六) 18:30",
+                    host: "Eric",
+                    status: "還缺 2 人",
+                    img: "https://picsum.photos/400/300?random=10",
+                    avatar: "https://picsum.photos/50?random=10"
+                },
+                {
+                    tag: "🎲 桌遊派對",
+                    title: "新手友善！阿瓦隆 & 狼人殺歡樂夜",
+                    location: "📍 新北市板橋區",
+                    time: "⏰ 10/25 (日) 14:00",
+                    host: "Jessica",
+                    status: "還缺 4 人",
+                    img: "https://picsum.photos/400/300?random=20",
+                    avatar: "https://picsum.photos/50?random=11"
+                },
+                {
+                    tag: "☕ 咖啡閒聊",
+                    title: "創業與自由職業者下午茶交流會",
+                    location: "📍 台北市信義區",
+                    time: "⏰ 10/28 (三) 15:00",
+                    host: "Alex",
+                    status: "報名即將截止",
+                    img: "https://picsum.photos/400/300?random=30",
+                    avatar: "https://picsum.photos/50?random=12"
+                },
+                {
+                    tag: "🎤 歡唱 KTV",
+                    title: "錢櫃夜唱團 流行金曲狂歡夜",
+                    location: "📍 台北市中山區",
+                    time: "⏰ 10/30 (五) 23:00",
+                    host: "Amber",
+                    status: "還缺 1 人",
+                    img: "https://picsum.photos/400/300?random=40",
+                    avatar: "https://picsum.photos/50?random=13"
+                }
+            ];
+
+            const gridContainer = document.getElementById("upcoming-events-grid");
+            let cardsHTML = "";
+
+            // 3. 根據計算出的 finalCount 循環產出卡片
+            for (let i = 0; i < finalCount; i++) {
+                // 循環使用預設資料庫中的項目
+                const data = sampleCards[i % sampleCards.length];
+
+                cardsHTML += `
+                    <div class="event-card">
+                        <div class="card-img" style="background-image: url('${data.img}');">
+                            <span class="card-tag">${data.tag}</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="event-title">${data.title}</div>
+                            <div class="event-info">
+                                <span>${data.location}</span>
+                                <span>${data.time}</span>
+                            </div>
+                            <div class="card-footer">
+                                <div class="host-info">
+                                    <div class="avatar" style="background-image: url('${data.avatar}'); background-size: cover;"></div>
+                                    <span>${data.host}</span>
+                                </div>
+                                <span class="status-badge">${data.status}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // 將生成的卡片寫入 DOM 容器中
+            gridContainer.innerHTML = cardsHTML;
+        });
+    </script>
 </body>
 
 </html>

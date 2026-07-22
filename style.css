@@ -38,7 +38,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 800;
     color: var(--primary-color);
     text-decoration: none;
@@ -157,6 +157,10 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* 自動控制區塊間距 */
 }
 
 .section-title {
@@ -171,6 +175,11 @@ header {
     font-size: 14px;
     color: var(--primary-color);
     text-decoration: none;
+}
+
+/* 獨立聚會區塊 (包裹 標題 + 卡片列表) */
+.events-section {
+    width: 100%;
 }
 
 /* 聚會卡片列表 */
